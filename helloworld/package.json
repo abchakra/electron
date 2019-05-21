@@ -6,14 +6,14 @@
   "scripts": {
     "start": "electron ."
   },
-  "devDependencies": {
-    "electron": "^5.0.1"
-  },
-  "author": "CodeDraken",
+  "devDependencies": {},
+  "author": "Abhishek Chakraborty",
   "license": "MIT",
   "dependencies": {
+    "electron": "^5.0.1",
     "electron-reload": "^1.4.0",
     "electron-store": "^3.2.0",
-    "spectre.css": "^0.5.8"
+    "spectre.css": "^0.5.8",
+    "electron-builder": "^20.39.0"
   }
 }

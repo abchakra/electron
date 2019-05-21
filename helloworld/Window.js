@@ -5,13 +5,20 @@ const { BrowserWindow } = require("electron");
 const defaultProps = {
   width: 500,
   height: 800,
-  show: false
+  show: false,
+  webPreferences: {
+    nodeIntegration: true
+  }
 };
+
+
+
+
 class Window extends BrowserWindow {
   constructor({ file, ...windowSetttings }) {
     //calls new browser window
     super({ ...defaultProps, ...windowSetttings });
-
+   
     // load the html and open devtools
     this.loadFile(file);
     // this.webContents.openDevTools();
